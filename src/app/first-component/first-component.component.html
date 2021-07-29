@@ -1,0 +1,19 @@
+<div>
+    <p style="background-color:lightpink; text-align: center;">First component Works </p>
+    <p>Name: {{name}}</p><hr/>
+    <p style="text-align: center;">Two way Binding</p>
+    <p>Name: <input type="text" [(ngModel)]="name"></p><hr/>
+<div>
+    <p style="text-align: center;">Addition Of 2 Numbers</p>
+    First Number : <input type="number" [(ngModel)]="ab" >
+    Second Number : <input type="number" [(ngModel)]="bc"><br/><br/>
+    <input type="button" value="Add" [disabled]="res" (click)="AddNumber(ab,bc)" >
+    <!--we can implement property binding using res value--><br><br>
+    <p> Result: {{ result }} </p>
+</div><hr/>
+First Name: <input type="text" #fir id="fir"/>
+Last Name: <input type="text" #sec id="sec"/><br><br>
+<button type="submit" (click)="Addtext (fir.value, sec.value)"> FullName </button><br>
+<p>Full Name is : {{fullname}}</p>
+<hr/>
+</div>
